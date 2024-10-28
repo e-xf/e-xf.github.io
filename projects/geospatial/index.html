@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo Furtado Portfolio</title>
+    <link rel="icon" href="../../assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../styles.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container header-content">
+            <a href="../../index.html" class="title-link"><h1>Eduardo Furtado</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="../../index.html">Bio</a></li>
+                    <li><a href="../../experience.html">Experience</a></li>
+                    <li><a href="../../research.html">Research</a></li>
+                    <li><a href="../index.html">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <section id="research" class="section">
+            <div class="container-experience">
+
+                <h2 class="research-title">Customer Behavior with Apriori Analysis</h2>
+
+                <figure style="text-align: center;">
+                    <img src="featured.jpg" alt="Image from the Investor Relations report" class="project-detail-image-wide">
+                    <figcaption>Image from the Investor Relations report</figcaption>
+                </figure>
+
+                <p class="research-paragraph">In shopping centers, understanding customer behavior is key to driving foot traffic, sales and engagement. One valuable source of data that can provide us some insights is the user's geolocation obtained from those whose share their location with the shopping mall app. By analyzing where the  customers are located when interacting with notifications and special offers through the app, we can gain a better understanding of where those customers are coming from and how engaged they are with the campaign, and in turn, we can better optimize our marketing and activation strategies.</p>
+                
+                <p class="research-paragraph">Using Python, Pandas, Folium, and Mixpanel to gather analytics (including latitude and longitude for those who opt in) from the app, I identified highly engaged customers from the previous Christmas campaign, who were offered with free parking for three months at our malls. By mapping their origin addresses and calculating travel distances, I found that customers traveled an average of 5 km to visit the mall, with some traveling over 40 km. These geospatial insights helped us understand their travel patterns and optimize our marketing efforts. As a result, 60% of these customers also participated in the subsequent Mother’s and Valentine’s Day campaigns, spending on average 27% more than the overall campaign average.</p>
+
+                <p class="research-paragraph">Additionally, I analyzed the impact of exclusive coupons offered through the app to generate visitor traffic. We launched a campaign offering 14,000 coupons for a complimentary appetizer at a casual dining restaurant chain across 13 malls. Using Folium, I created heat maps to visualize where customers were when they reserved the coupons and how long it took them to visit the mall. The analysis showed that most customers reserved the coupon while outside the mall and visited later - 42% visited on the same day, 14% the next day, and 44% within one week. On average, customers were 4.4 km away when making the reservation. These findings provided valuable insights into customer behavior that allow us to tailor future campaigns to increase foot traffic more effectively.</p>
+
+                <p class="research-paragraph">You can read more about this analysis in the <a href="https://ri.multiplan.com.br/en/analysis-tools/results-center/" target="_blank" class="external-link">Investor Relations</a> report this project was showcased in the Earnings Release 2Q21 (page 20) <a href="https://api.mziq.com/mzfilemanager/v2/d/08dd2899-a019-4531-a90c-f00c9f91b0ff/4a5f4be7-6eae-00be-f2d4-ae474e778420" target="_blank" class="external-link">[direct link to the PDF]</a>.</p>
+
+                <div class="button-container">
+                    <a href="../index.html" class="back-button">Back to Projects</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Eduardo Furtado</p>
+        </div>
+    </footer>
+</body>
+</html>

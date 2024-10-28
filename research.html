@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo Furtado Portfolio</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="title-link"><h1>Eduardo Furtado</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Bio</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="projects/index.html">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <section id="research" class="section">
+            <div class="container-experience">
+                <h2 class="research-title">Academic Research</h2>
+                <p class="research-paragraph">During my master's degree in Informatics at the Federal University of the State of Rio de Janeiro, my research was focused on developing AI techniques for the clinical diagnosis of hand tremors patients. Tremors are involuntary, rhythmic muscle contractions leading to shaking movements in one or more parts of the body, more commonly the hands. Early diagnosis of tremors is crucial, as it can significantly improve the management and treatment outcomes for patients, potentially slowing the progression of underlying neurological conditions.</p>
+
+                <p class="research-paragraph">My work involved conducting a comprehensive literature review on existing AI methodologies for tremor diagnosis, which I presented at the International Conference on Agents and Artificial Intelligence (ICAART) 2024, available at DOI 10.5220/0012385400003636. The review focused on diagnosis using simple video sources, such as a webcam, making it easier and cheaper to deploy without the need for expensive equipment like sensors or 3D cameras. One of the key challenges in this field is the scarcity of large, publicly available datasets, as most data are privately held and limited in size.</p>
+
+                <figure>
+                    <img src="assets/images/icaart2024poster.png" alt="AI for Hand Tremor Diagnosis" class="research-image">
+                    <figcaption>ICAART poster presentation</figcaption>
+                </figure>
+
+                <p class="research-paragraph">For my research, I obtained a dataset of finger-tapping videos, a popular task used by clinicians, from a group of researchers working at a hospital. Although their methodology was available in their paper, they did not share the code they used. Therefore, I replicated their approach in Python, creating the code to clean the dataset, extract features from the videos, and train a deep learning model using TensorFlow. I incorporated additional data augmentation techniques and introduced new statistical features. To further improve the model, I implemented cross-validation and used the t-test to check the statistical significance of the new results compared to the original methodology. These enhancements led to a statistically significant improvement in the model's F1 score, demonstrating the potential for improved diagnostic accuracy.</p>
+                
+                <p class="research-paragraph">To support future studies, I also developed a web platform using Python and Streamlit. This platform enables doctors to record videos of patients performing hand tasks, facilitating the monitoring of tremor progression over time. By maintaining a detailed history for each patient, this tool not only aids doctors in their clinical assessments but also helps collect a valuable dataset that can be used to train better models.</p>
+                <figure>
+                    <img src="assets/images/platformposter.png" alt="Video Tasks Platform" class="research-image">
+                    <figcaption>Video tasks platform</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Eduardo Furtado</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo Furtado Portfolio</title>
+    <link rel="icon" href="../../assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../styles.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container header-content">
+            <a href="../../index.html" class="title-link"><h1>Eduardo Furtado</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="../../index.html">Bio</a></li>
+                    <li><a href="../../experience.html">Experience</a></li>
+                    <li><a href="../../research.html">Research</a></li>
+                    <li><a href="../index.html">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <section id="research" class="section">
+            <div class="container-experience">
+
+                <h2 class="research-title">Customer Behavior with Apriori Analysis</h2>
+
+                <figure style="text-align: center;">
+                    <img src="featured.jpg" alt="Image from the Investor Relations report" class="project-detail-image-wide">
+                    <figcaption>Image from the Investor Relations report</figcaption>
+                </figure>
+
+                <p class="research-paragraph">During a promotional event, a shopping mall offered customers the chance to win prizes by submitting their purchase invoices. This provided a rare opportunity to access transactional data across different stores within the mall, since purchases usually happen directly at individual retailers. With this data, we can understand how customers move through the mall during the campaign and uncover patterns that help tailor future promotions.</p>
+                
+                <p class="research-paragraph">I applied Market Basket Analysis techniques, similar to how retailers find associations between products bought by the same client. Instead of products, I focused on pairs of stores that customers visited on the same trip. Using Python and the mlxtend library, I implemented the Apriori algorithm to identify frequent store pairs based on a minimum support threshold.</p>
+
+                <p class="research-paragraph">The algorithm provides us with a table of frequent patterns, including metrics such as support (how often a pair occurred) and confidence (the likelihood that a customer who visited one store also visited the other). To make the results more accessible for all stakeholders, I created a Chord diagram to simplify the visualization of store pairs and their relationships. This allowed the users to easily see with stores combinations were most common and which pairs had the highest impact on total visits and upselling opportunities (where customers spent more when visiting both stores).</p>
+
+                <p class="research-paragraph">These insights are invaluable for the operations and marketing department of the malls, allowing them to make more data-driven decisions about the store mix and strategies to encourage additional spending for the upcoming campaigns.</p>
+
+                <p class="research-paragraph">You can read more about this analysis in the <a href="https://ri.multiplan.com.br/en/analysis-tools/results-center/" target="_blank" class="external-link">Investor Relations</a> report this project was showcased in the Earnings Release 4Q20 (page 14) <a href="https://api.mziq.com/mzfilemanager/v2/d/08dd2899-a019-4531-a90c-f00c9f91b0ff/4ff6e578-e627-48ba-f400-93f9a4201f26" target="_blank" class="external-link">[direct link to the PDF]</a>.</p>
+
+                <div class="button-container">
+                    <a href="../index.html" class="back-button">Back to Projects</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Eduardo Furtado</p>
+        </div>
+    </footer>
+</body>
+</html>
