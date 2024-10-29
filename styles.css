@@ -1,38 +1,27 @@
-/* Resetting default styles */
 * {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
 }
 
 body {
     font-family: Arial, sans-serif;
     color: #fff;
-    /* background-color: #121212; */
     background-color: #282c34;
     line-height: 1.6;
 }
 
-/* Container for layout consistency */
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.container-about {
+.container-about, .container-featured {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.container-featured {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Header section */
 header {
     background-color: #1b1f23;
     padding: 20px 0;
@@ -73,20 +62,12 @@ nav ul li a:hover {
 .external-link {
     color: inherit;
     text-decoration: underline;
-    /* font-size: 16px; */
 }
 
-/* .external-link:hover {
-    text-decoration: none;
-} */
-
-
-
-/* Main about section */
 #about {
     background-color: #1d3b43;
     padding: 80px 0;
-    color: #ffffff;
+    color: #fff;
 }
 
 .about-content {
@@ -96,7 +77,6 @@ nav ul li a:hover {
     gap: 80px;
 }
 
-/* Profile and about sections */
 .profile-section {
     text-align: center;
     max-width: 300px;
@@ -121,25 +101,16 @@ nav ul li a:hover {
 
 .linkedin-link {
     display: inline-block;
-    /* margin-top: 10px; */
-    /* padding: 8px 16px; */
-    /* background-color: #0e76a8; */
-    padding-top: -10px;
-    color: white;
+    color: #fff;
     text-decoration: none;
     border-radius: 5px;
+    padding-top: -10px;
 }
 
 .linkedin-link i {
-    /* margin-right: 5px; */
-    color: white;
+    color: #fff;
 }
 
-/* .linkedin-link:hover {
-    background-color: #0b5c83;
-} */
-
-/* About and interests */
 .about-text-section {
     max-width: 800px;
 }
@@ -172,14 +143,13 @@ nav ul li a:hover {
     font-size: small;
 }
 
-/* Featured publications */
 #publications {
     background-color: #282c34;
     padding: 60px 0;
 }
 
 #publications h3 {
-    color: #ffffff;
+    color: #fff;
     font-size: 22px;
     margin-bottom: 20px;
     text-align: center;
@@ -195,7 +165,7 @@ nav ul li a:hover {
     padding: 20px;
     border-radius: 8px;
     width: 45%;
-    color: white;
+    color: #fff;
 }
 
 .publication-img {
@@ -217,7 +187,6 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
-/* Footer */
 footer {
     background-color: #1b1f23;
     padding: 20px 0;
@@ -226,10 +195,8 @@ footer {
 
 footer p {
     font-size: 14px;
-    color: #ffffff;
+    color: #fff;
 }
-
-
 
 .container-experience {
     width: 50%;
@@ -245,23 +212,21 @@ footer p {
 h2 {
     font-size: 28px;
     margin-bottom: 20px;
-    color: #ffffff;
+    color: #fff;
 }
 
 h3 {
     font-size: 20px;
     margin-bottom: 10px;
-    /* color: #00b3b3; */
 }
 
 h4 {
     font-size: 14px;
     margin-bottom: 10px;
-    /* color: #00b3b3; */
 }
 
 p {
-    color: #cccccc;
+    color: #ccc;
     margin-bottom: 20px;
     font-size: 18px;
 }
@@ -283,7 +248,6 @@ p {
     font-size: small;
 }
 
-/* Skills Section */
 .skills-grid {
     display: flex;
     gap: 30px;
@@ -304,16 +268,13 @@ p {
 
 .skills-column ul li {
     margin-bottom: 10px;
-    color: #cccccc;
+    color: #ccc;
 }
-
-
 
 .research-title {
     font-size: 32px;
     line-height: 1.6;
     margin-bottom: 40px;
-    /* color: #fff; */
     text-align: center;
 }
 
@@ -321,14 +282,12 @@ p {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 15px;
-    /* color: #fff; */
     text-align: justify;
 }
 
 .research-image {
     width: 100%;
     max-width: 800px;
-    /* margin: 20px 0; */
     margin-top: 20px;
     border-radius: 8px;
     display: block;
@@ -344,8 +303,6 @@ figcaption {
     margin-top: 10px;
     margin-bottom: 40px;
 }
-
-
 
 .container-portfolio {
     width: 80%;
@@ -364,7 +321,7 @@ figcaption {
     background-color: #1b1f23;
     padding: 20px;
     border-radius: 8px;
-    color: #ffffff;
+    color: #fff;
 }
 
 .project-image {
@@ -403,17 +360,16 @@ figcaption {
 .project-card h3 {
     font-size: 20px;
     margin-bottom: 10px;
-    /* color: #00b3b3; */
 }
 
 .project-card p {
-    color: #cccccc;
+    color: #ccc;
 }
 
 .project-date {
     margin-top: 10px;
     font-size: 12px;
-    color: #aaaaaa;
+    color: #aaa;
 }
 
 .project-card-link {
@@ -421,13 +377,6 @@ figcaption {
     color: inherit;
     display: block;
 }
-
-/* .project-card {
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin-bottom: 20px;
-    transition: box-shadow 0.3s ease;
-} */
 
 .project-card:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -437,7 +386,7 @@ figcaption {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px; /* Optional: Add margin to the container */
+    margin-top: 20px;
 }
 
 .back-button {
@@ -458,8 +407,6 @@ figcaption {
     background-color: #254B56;
 }
 
-
-
 .icon {
     width: 16px;
     height: 16px;
@@ -472,16 +419,13 @@ figcaption {
 
 
 
-
-
-
+/* Tablet Styles */
 @media (max-width: 1000px) {
     .container-about, .container-featured, .container-experience, .publication-card, .project-card{
         width: 90%;
     }
 
-    .publications-grid,
-    .projects-grid {
+    .publications-grid, .projects-grid {
         display: grid;
         grid-template-columns: 1fr;
         gap: 15px;
@@ -489,22 +433,21 @@ figcaption {
     }
 }
 
-/* Mobile-Specific Styles */
+/* Mobile Styles */
 @media (max-width: 600px) {
     html, body {
         width: 100%;
         overflow-x: hidden;
     }
 
-    /* Container adjustments for mobile */
-    .container,
+    /* .container,
     .container-about,
     .container-featured,
     .container-experience,
     .container-portfolio {
         width: 100%;
         padding: 0 10px;
-    }
+    } */
 
     .container-about, .container-featured, .container-experience, .publication-card, .project-card{
         width: 90%;
@@ -514,7 +457,6 @@ figcaption {
         width: 100%;
     }
 
-    /* Single-column layout for grids */
     .publications-grid,
     .projects-grid {
         display: grid;
@@ -529,7 +471,6 @@ figcaption {
         align-items: center;
     }
 
-    /* Header adjustments */
     .header-content {
         flex-direction: column;
         align-items: center;
@@ -551,7 +492,6 @@ figcaption {
         flex-wrap: wrap;
     }
 
-    /* Profile section */
     .profile-section h2 {
         font-size: 22px;
     }
@@ -561,7 +501,6 @@ figcaption {
         height: 100px;
     }
 
-    /* Project and publication card adjustments */
     .publication-card{
         width: 100%;
         max-width: 100%;
