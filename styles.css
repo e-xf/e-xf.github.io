@@ -196,6 +196,19 @@ footer {
 footer p {
     font-size: 14px;
     color: #fff;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-icon {
+    display: inline-flex;
+    justify-content: center;
+    margin-right: 4px;
+    gap: 20px;
+    width: 14px;
+    height: 14px;
+    filter: invert(1);
+    vertical-align: middle;
 }
 
 .container-experience {
