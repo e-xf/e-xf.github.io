@@ -44,9 +44,11 @@
                     <figcaption>Image generated with Dall-E</figcaption>
                 </figure>
 
-                <p class="research-paragraph"></p>
+                <p class="research-paragraph">I worked on a project to help the client better understand customer opinions about their products by analyzing online reviews. Using Python with BeautifulSoup, I scraped reviews from a selection of websites  to create an initial dataset. I cleaned and preprocessed the texts from the reviews using NLTK and, since the reviews were written in Portuguese, I used an adapted version of the Vader lexicon and rule-based sentiment analysis library for Portuguese text called Leia. With this tool, we can now categorize the reviews as positive, negative, or neutral.</p>
                 
-                <p class="research-paragraph"></p>
+                <p class="research-paragraph">To make these insights accessible to everyone on the client's team, I created an interactive dashboard using Streamlit. The dashboard showed the sentiment breakdown and key themes from the reviews, while also letting users filter the data as they like.</p>
+
+                <p class="research-paragraph">And to keep the dashboard always up to date, I automated the scrapping process with a scheduled task that ran daily. This new data is sent through the preprocessing and sentiment analysis pipeline and then updates the table in the database used by the dashboard.</p>
 
                 <div class="button-container">
                     <a href="../index.html" class="back-button">← Back to Projects</a>
