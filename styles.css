@@ -244,8 +244,8 @@ p {
     font-size: 18px;
 }
 
-p.no-margin-bottom {
-    margin-bottom: 0;
+p.small-margin-bottom {
+    margin-bottom: 10px;
 }
 
 .job-entry, .education-entry {
