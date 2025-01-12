@@ -244,6 +244,10 @@ p {
     font-size: 18px;
 }
 
+p.no-margin-bottom {
+    margin-bottom: 0;
+}
+
 .job-entry, .education-entry {
     margin-bottom: 40px;
     display: flex;
