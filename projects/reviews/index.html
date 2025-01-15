@@ -44,11 +44,9 @@
                     <figcaption>Image generated with Dall-E</figcaption>
                 </figure>
 
-                <p class="research-paragraph">I worked on a project to help the client better understand customer opinions about their products by analyzing online reviews. Using Python with BeautifulSoup, I scraped reviews from a selection of websites  to create an initial dataset. I cleaned and preprocessed the texts from the reviews using NLTK and, since the reviews were written in Portuguese, I used an adapted version of the Vader lexicon and rule-based sentiment analysis library for Portuguese text called Leia. With this tool, we can now categorize the reviews as positive, negative, or neutral.</p>
+                <p class="research-paragraph">I worked on a project to help a client analyze customer opinions about their products by examining online reviews. Using Python, Selenium and BeautifulSoup, I scraped reviews from multiple websites to build the initial dataset. The text was cleaned and preprocessed using NLTK, and sentiment was categorized as positive, negative, or neutral using a sentiment analysis tool adapted for Portuguese.</p>
                 
-                <p class="research-paragraph">To make these insights accessible to everyone on the client's team, I created an interactive dashboard using Streamlit. The dashboard showed the sentiment breakdown and key themes from the reviews, while also letting users filter the data as they like.</p>
-
-                <p class="research-paragraph">And to keep the dashboard always up to date, I automated the scrapping process with a scheduled task that ran daily. This new data is sent through the preprocessing and sentiment analysis pipeline and then updates the table in the database used by the dashboard.</p>
+                <p class="research-paragraph">To make the insights accessible, I built an interactive dashboard with Streamlit. The dashboard displayed sentiment breakdowns, key themes, and allowed users to filter data dynamically. I automated the scraping process with a scheduled task that ran daily, updating the dataset, preprocessing pipeline, and dashboard database to ensure near real-time insights.</p>
 
                 <div class="button-container">
                     <a href="../index.html" class="back-button">← Back to Projects</a>
