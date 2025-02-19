@@ -431,6 +431,26 @@ figcaption {
     filter: invert(1);
 }
 
+.ir-badge {
+    background-color: #00FFFF;
+    color: #333;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 5px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    text-transform: uppercase;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    z-index: 10;
+    pointer-events: none;
+}
+.project-card {
+    position: relative;
+    padding-top: 24px; /* Adjust to fit badge */
+}
+
 
 
 
