@@ -511,6 +511,10 @@ figcaption {
         width: 90%;
     }
 
+    .featured-grid {
+        width: 100%;
+    }
+
     .about-content,
     .publications-grid, 
     .featured-grid {
