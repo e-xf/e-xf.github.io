@@ -51,12 +51,15 @@
 
                 <p class="research-paragraph">I converted my thesis from LaTeX to Markdown, segmented it into smaller chunks, and stored these locally in a Chroma vector database. Each segment was embedded using the E5-Large model, chosen for its strong performance with technical and academic text. When users submit a query, LangChain retrieves the most relevant chunks from the database and passes them to 4o-mini along with a structured prompt template, ensuring context-rich responses.</p>
 
-                <video class="research-image"
-                    src="assets/videos/chatbot.mp4"
-                    autoplay muted loop playsinline>
-                    Sorry, your browser doesn’t support HTML5 video.
-                </video>
-
+                <figure>
+                    <video class="research-image"
+                        src="assets/videos/chatbot.mp4"
+                        autoplay muted loop playsinline>
+                        Sorry, your browser doesn’t support HTML5 video.
+                    </video>
+                    <figcaption>Video tasks platform</figcaption>
+                </figure>
+                
                 <p class="research-paragraph">The chatbot’s interface is built with Streamlit and runs on a DigitalOcean droplet. If you’re interested in trying the chatbot and interacting directly with my thesis, feel free to reach out to me to obtain an access code.</p>
 
 
