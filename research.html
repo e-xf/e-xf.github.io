@@ -30,6 +30,13 @@
         <section id="research" class="section">
             <div class="container-experience">
                 <h2 class="research-title">Academic Research</h2>
+
+                <p style="background-color: #1e293b; padding: 10px; border-left: 4px solid #60a5fa; border-radius: 4px; color: #e2e8f0;">
+                ✨ I've also built an interactive RAG chatbot to answer questions about this research.
+                <br>
+                <a href="./projects/chatbot/index.html" style="font-weight: bold; color: #60a5fa; text-decoration: none;">Check more about it here →</a>
+                </p>
+
                 <p class="research-paragraph">During my master's degree in Informatics at the <a class="external-link" href="https://ppgi.uniriotec.br/" target="_blank">Federal University of the State of Rio de Janeiro</a>, my research was focused on developing AI techniques for the clinical diagnosis of hand tremors patients. Tremors are involuntary, rhythmic muscle contractions leading to shaking movements in one or more parts of the body, more commonly the hands. Early diagnosis of tremors is crucial, as it can significantly improve the management and treatment outcomes for patients, potentially slowing the progression of underlying neurological conditions.</p>
 
                 <p class="research-paragraph">My work involved conducting a comprehensive literature review on existing AI methodologies for tremor diagnosis, which I presented at the International Conference on Agents and Artificial Intelligence (ICAART) 2024, available at this <a class="external-link" href="https://doi.org/10.5220/0012385400003636" target="_blank">DOI</a>. The review focused on diagnosis using simple video sources, such as a webcam, making it easier and cheaper to deploy without the need for expensive equipment like sensors or 3D cameras. One of the key challenges in this field is the scarcity of large, publicly available datasets, as most data are privately held and limited in size.</p>
@@ -46,23 +53,6 @@
                     <img src="assets/images/platformposter.png" alt="Featured image" class="research-image">
                     <figcaption>Video tasks platform</figcaption>
                 </figure>
-
-                <p class="research-paragraph">Taking my research further, I built a chatbot using a Retrieval-Augmented Generation (RAG) pipeline with LangChain to allow anyone to interact directly with my thesis findings through simple questions.</p>
-
-                <p class="research-paragraph">I converted my thesis from LaTeX to Markdown, segmented it into smaller chunks, and stored these locally in a Chroma vector database. Each segment was embedded using the E5-Large model, chosen for its strong performance with technical and academic text. When users submit a query, LangChain retrieves the most relevant chunks from the database and passes them to 4o-mini along with a structured prompt template, ensuring context-rich responses.</p>
-
-                <figure>
-                    <video class="research-image"
-                        src="assets/videos/chatbot.mp4"
-                        autoplay muted loop playsinline controls controlslist="nodownload nofullscreen">
-                        Sorry, your browser doesn’t support HTML5 video.
-                    </video>
-                    <figcaption>Chatbot demo</figcaption>
-                </figure>
-
-                <p class="research-paragraph">The chatbot’s interface is built with Streamlit and runs on a DigitalOcean droplet. If you’re interested in trying the chatbot and interacting directly with my thesis, feel free to reach out to me to obtain an access code.</p>
-
-
             </div>
         </section>
     </main>
