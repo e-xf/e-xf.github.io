@@ -46,11 +46,11 @@
                     <figcaption>Chatbot demo</figcaption>
                 </figure>
 
-                <p class="research-paragraph">Taking my Master's research further, I built a chatbot using a Retrieval-Augmented Generation (RAG) pipeline with LangChain to allow anyone to interact directly with my thesis findings through simple questions.</p>
+                <p class="research-paragraph">Based on my <a href="../../research.html">Master's degree research</a>, I built a chatbot using a Retrieval-Augmented Generation (RAG) pipeline with LangChain to allow anyone to interact directly with my thesis findings through simple questions.</p>
                 
-                <p class="research-paragraph">I converted my thesis from LaTeX to Markdown, segmented it into smaller chunks, and stored these locally in a Chroma vector database. Each segment was embedded using the E5-Large model, chosen for its strong performance with technical and academic text. When users submit a query, LangChain retrieves the most relevant chunks from the database and passes them to 4o-mini along with a structured prompt template, ensuring context-rich responses.</p>
+                <p class="research-paragraph">I converted my thesis from LaTeX to Markdown, segmented it into smaller chunks, stored these locally in a Chroma vector database and embedded each segment using the E5-Large model. When a user submit a query, LangChain retrieves the most relevant chunks from the database and passes them to 4o-mini along with a structured prompt template, returning context-rich responses.</p>
 
-                <p class="research-paragraph">The chatbot’s interface is built with Streamlit and runs on a DigitalOcean droplet. If you’re interested in trying the chatbot and interacting directly with my thesis, feel free to reach out to me to obtain an access code.</p>
+                <p class="research-paragraph">The chatbot’s interface is built with Streamlit and runs on a DigitalOcean droplet and Caddy as a reverse proxy. If you’re interested in trying the chatbot and interacting directly with my thesis, feel free to reach out to me to obtain an access code.</p>
 
                 <div class="button-container">
                     <a href="../index.html" class="back-button">← Back to Projects</a>
