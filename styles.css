@@ -30,6 +30,8 @@
 
 html {
     scroll-behavior: smooth;
+    background: var(--bg-deep);
+    overscroll-behavior-y: none;
 }
 
 body {
@@ -37,8 +39,11 @@ body {
     color: var(--ink);
     line-height: 1.7;
     min-height: 100vh;
+    min-height: 100dvh;
     position: relative;
     overflow-x: hidden;
+    background-color: var(--bg-deep);
+    background-attachment: fixed;
     background:
         radial-gradient(circle at 8% 12%, rgba(80, 160, 140, 0.22) 0%, rgba(80, 160, 140, 0) 38%),
         radial-gradient(circle at 88% 2%, rgba(246, 187, 108, 0.16) 0%, rgba(246, 187, 108, 0) 36%),
@@ -158,9 +163,10 @@ nav ul li a:hover {
 }
 
 body.page-home nav ul li:nth-child(1) a,
-body.page-research nav ul li:nth-child(2) a,
-body.page-projects nav ul li:nth-child(3) a,
-body.page-project-detail nav ul li:nth-child(3) a {
+body.page-experience nav ul li:nth-child(2) a,
+body.page-research nav ul li:nth-child(3) a,
+body.page-projects nav ul li:nth-child(4) a,
+body.page-project-detail nav ul li:nth-child(4) a {
     color: var(--ink-strong);
     border-color: var(--line-strong);
     background: rgba(14, 46, 59, 0.7);
