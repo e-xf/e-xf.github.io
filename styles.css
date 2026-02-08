@@ -163,10 +163,9 @@ nav ul li a:hover {
 }
 
 body.page-home nav ul li:nth-child(1) a,
-body.page-experience nav ul li:nth-child(2) a,
-body.page-research nav ul li:nth-child(3) a,
-body.page-projects nav ul li:nth-child(4) a,
-body.page-project-detail nav ul li:nth-child(4) a {
+body.page-research nav ul li:nth-child(2) a,
+body.page-projects nav ul li:nth-child(3) a,
+body.page-project-detail nav ul li:nth-child(3) a {
     color: var(--ink-strong);
     border-color: var(--line-strong);
     background: rgba(14, 46, 59, 0.7);
