@@ -30,7 +30,10 @@
 
 html {
     scroll-behavior: smooth;
-    background: var(--bg-deep);
+    height: 100%;
+    min-height: -webkit-fill-available;
+    background-color: var(--bg-deep);
+    background-image: linear-gradient(150deg, var(--bg-deep) 0%, #071821 45%, var(--bg-mid) 100%);
     overscroll-behavior-y: none;
 }
 
@@ -40,14 +43,25 @@ body {
     line-height: 1.7;
     min-height: 100vh;
     min-height: 100dvh;
+    min-height: -webkit-fill-available;
     position: relative;
     overflow-x: hidden;
+    overscroll-behavior-y: none;
     background-color: var(--bg-deep);
-    background-attachment: fixed;
+    background-attachment: scroll;
     background:
         radial-gradient(circle at 8% 12%, rgba(80, 160, 140, 0.22) 0%, rgba(80, 160, 140, 0) 38%),
         radial-gradient(circle at 88% 2%, rgba(246, 187, 108, 0.16) 0%, rgba(246, 187, 108, 0) 36%),
         linear-gradient(150deg, var(--bg-deep) 0%, #071821 45%, var(--bg-mid) 100%);
+}
+
+@supports (-webkit-touch-callout: none) {
+    html,
+    body {
+        height: -webkit-fill-available;
+        min-height: -webkit-fill-available;
+        background-color: var(--bg-deep);
+    }
 }
 
 body::before,
