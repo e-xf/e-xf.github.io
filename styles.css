@@ -30,6 +30,7 @@
 
 html {
     scroll-behavior: smooth;
+    color-scheme: dark;
     height: 100%;
     min-height: -webkit-fill-available;
     background-color: var(--bg-deep);
@@ -61,6 +62,12 @@ body {
         height: -webkit-fill-available;
         min-height: -webkit-fill-available;
         background-color: var(--bg-deep);
+    }
+}
+
+@supports (padding: env(safe-area-inset-bottom)) {
+    body {
+        padding-bottom: env(safe-area-inset-bottom);
     }
 }
 
