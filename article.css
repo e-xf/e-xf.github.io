@@ -149,8 +149,6 @@
 .research-art {
     max-width: 29rem;
     justify-self: end;
-    filter: grayscale(1) invert(1) contrast(1.25);
-    mix-blend-mode: screen;
 }
 
 .research-spread {
