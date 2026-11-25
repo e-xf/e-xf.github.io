@@ -5,142 +5,173 @@
 
     <meta charset="UTF-8">
     <meta name="color-scheme" content="dark">
-    <style>html, body { background-color: #06131a; }</style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="theme-color" content="#06131a">
-    <title>Eduardo Furtado Portfolio - Projects</title>
-    <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
+    <meta name="theme-color" content="#121413">
+    <title>Projects — Eduardo Furtado</title>
+    <link rel="icon" href="../assets/images/favicon.png" type="image/png">
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="directory.css">
 </head>
 <body class="page-projects">
-    <header>
-        <div class="container header-content">
-            <a href="../index.html" class="title-link"><h1>Eduardo Furtado</h1></a>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Bio</a></li>
-                    <li><a href="../research.html">Research</a></li>
-                    <li><a href="index.html">Projects</a></li>
-                </ul>
+    <a class="skip-link" href="#projects">Skip to content</a>
+    <header class="site-header">
+        <div class="header-inner wrap">
+            <a class="brand" href="../index.html" aria-label="Eduardo Furtado, home">
+                <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+                <span class="brand-name">Eduardo Furtado</span>
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="../index.html">Overview</a>
+                <a href="../research.html">Research</a>
+                <a href="../projects/index.html" aria-current="page">Projects</a>
+                <a class="nav-contact" href="https://www.linkedin.com/in/eduardo-furtado" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
             </nav>
         </div>
     </header>
 
-
-
-    <main>
-        <section id="projects" class="section">
-            <div class="container-portfolio">
-                <h2 class="research-title">Projects</h2>
-                <div class="projects-grid">
-
-
-
-                    <a href="covid/index.html" class="project-card-link">
-                        <div class="project-card">
-                            <img src="covid/featured.png" alt="Featured image" class="project-image">
-                            <h3>COVID-19 Data Platform in Metallurgical Plants</h3>
-                            <p>Developing a data-driven solution to assist the medical team in identifying high-risk sites.</p>
-                        </div>
-                    </a>
-
-
-
-                    <a href="apriori/index.html" class="project-card-link">
-                        <div class="project-card">
-                            <span class="featured-badge">📈 Featured in IR Report</span>
-                            <img src="apriori/featured.jpg" alt="Featured image" class="project-image">
-                            <h3>Customer Shopping Behavior with Apriori Analysis</h3>
-                            <p>Analyzing customer purchase patterns using the Apriori algorithm to identify frequent store pairs.</p>
-                        </div>
-                    </a>
-
-                    
-                    
-                    <a href="chatbot/index.html" class="project-card-link">
-                        <div class="project-card">
-                            <span class="featured-badge">🎓 Academic Research</span>
-                            <img src="chatbot/featured.png" alt="Featured image" class="project-image">
-                            <h3>RAG Chatbot with LangChain</h3>
-                            <p>Creating a chatbot using Retrieval-Augmented Generation to answer questions about my Master's degree thesis.</p>
-                        </div>
-                    </a>
-
-                    
-                    
-                    <a href="geospatial/index.html" class="project-card-link">
-                        <div class="project-card">
-                            <span class="featured-badge">📈 Featured in IR Report</span>
-                            <img src="geospatial/featured.jpg" alt="Featured image" class="project-image">
-                            <h3>Geospatial Data Science for Customer Engagement</h3>
-                            <p>Using location data to determine user behavior and engagement for shopping mall visits and promotional campaigns.</p>
-                        </div>
-                    </a>
-
-
-
-                    <a href="maintenance/index.html" class="project-card-link">
-                        <div class="project-card">
-                            <img src="maintenance/featured.png" alt="Featured image" class="project-image">
-                            <h3>Predictive Maintenance of Mining Trains</h3>
-                            <p>Developing predictive maintenance models to reduce mining train failures on-track.</p>
-                        </div>
-                    </a>
-
-
-
-                    <a href="recommendation/index.html" class="project-card-link">
-                        <div class="project-card">
-                            <span class="featured-badge">📈 Featured in IR Report</span>
-                            <img src="recommendation/featured.jpg" alt="Featured image" class="project-image">
-                            <h3>Recommendation Engine for Retail Coupons</h3>
-                            <p>Boosting app engagement and sales with a personalized coupon recommendation engine.</p>
-                        </div>
-                    </a>
-
-
-
-                    <a href="graph/index.html" class="project-card-link">
-                        <div class="project-card">
-                            <img src="graph/featured.png" alt="Featured image" class="project-image">
-                            <h3>Graph Analysis in App Navigation</h3>
-                            <p>Mapping user journeys with graphs to enhance engagement in multiple services app.</p>
-                        </div>
-                    </a>
-
-
-
-                    <a href="persona/index.html" class="project-card-link">
-                        <div class="project-card">
-                            <span class="featured-badge">📈 Featured in IR Report</span>
-                            <img src="persona/featured.jpg" alt="Featured image" class="project-image">
-                            <h3>Creating Customer Personas of Loyalty Programs</h3>
-                            <p>Visualizing clients journeys in a loyalty program with customer personas.</p>
-                        </div>
-                    </a>
-
-
-                    
-                    <a href="reviews/index.html" class="project-card-link">
-                        <div class="project-card">
-                            <img src="reviews/featured.png" alt="Featured image" class="project-image">
-                            <h3>Sentiment Analysis of Online Reviews</h3>
-                            <p>Using NLP to analyze trends and user sentiment of web-scrapped reviews.</p>
-                        </div>
-                    </a>
-
-
-
-                </div>
-            </div>
-        </section>
+    <main id="projects" class="wrap project-directory">
+        <div class="directory-heading">
+            <h1>Projects</h1>
+            <p>Applied data science in retail, healthcare and industry.</p>
+        </div>
+        <div class="directory-columns" aria-hidden="true">
+            <span>Case study</span>
+            <span>Methods &amp; tools</span>
+        </div>
+        <ul class="directory-list">
+            <li>
+                <a class="directory-entry" href="apriori/index.html" aria-labelledby="apriori-title">
+                    <span class="directory-entry-image">
+                        <img src="apriori/featured.webp" alt="" decoding="async" width="1152" height="928">
+                    </span>
+                    <div class="directory-entry-text">
+                        <p class="directory-entry-note">Featured in an investor relations report</p>
+                        <h2 id="apriori-title">Customer Shopping Behavior with Apriori Analysis</h2>
+                        <p class="directory-entry-summary">Identifying which stores customers visit on the same trip through purchase patterns and the Apriori algorithm.</p>
+                    </div>
+                    <p class="directory-entry-methods">Market basket analysis · Apriori · mlxtend</p>
+                    <span class="directory-entry-arrow" aria-hidden="true">→</span>
+                </a>
+            </li>
+            <li>
+                <a class="directory-entry" href="covid/index.html" aria-labelledby="covid-title">
+                    <span class="directory-entry-image">
+                        <img src="covid/featured.webp" alt="" loading="lazy" decoding="async" width="960" height="960">
+                    </span>
+                    <div class="directory-entry-text">
+                        <p class="directory-entry-note">Occupational health</p>
+                        <h2 id="covid-title">COVID-19 Data Platform in Metallurgical Plants</h2>
+                        <p class="directory-entry-summary">Helping medical teams identify high-risk sites by comparing factory data with local COVID-19 trends.</p>
+                    </div>
+                    <p class="directory-entry-methods">API pipelines · Flask · Tableau</p>
+                    <span class="directory-entry-arrow" aria-hidden="true">→</span>
+                </a>
+            </li>
+            <li>
+                <a class="directory-entry" href="chatbot/index.html" aria-labelledby="chatbot-title">
+                    <span class="directory-entry-image">
+                        <img src="chatbot/featured.webp" alt="" loading="lazy" decoding="async" width="960" height="540">
+                    </span>
+                    <div class="directory-entry-text">
+                        <p class="directory-entry-note">Academic research</p>
+                        <h2 id="chatbot-title">RAG Chatbot with LangChain</h2>
+                        <p class="directory-entry-summary">Making my master’s thesis searchable through a chatbot that answers questions using passages from the research.</p>
+                    </div>
+                    <p class="directory-entry-methods">LangChain · Chroma · E5-Large</p>
+                    <span class="directory-entry-arrow" aria-hidden="true">→</span>
+                </a>
+            </li>
+            <li>
+                <a class="directory-entry" href="geospatial/index.html" aria-labelledby="geospatial-title">
+                    <span class="directory-entry-image">
+                        <img src="geospatial/featured.webp" alt="" loading="lazy" decoding="async" width="1152" height="312">
+                    </span>
+                    <div class="directory-entry-text">
+                        <p class="directory-entry-note">Featured in an investor relations report</p>
+                        <h2 id="geospatial-title">Geospatial Data Science for Customer Engagement</h2>
+                        <p class="directory-entry-summary">Using location data to understand shopping mall visits and how customers respond to promotional campaigns.</p>
+                    </div>
+                    <p class="directory-entry-methods">Heat maps · Folium · Mixpanel</p>
+                    <span class="directory-entry-arrow" aria-hidden="true">→</span>
+                </a>
+            </li>
+            <li>
+                <a class="directory-entry" href="maintenance/index.html" aria-labelledby="maintenance-title">
+                    <span class="directory-entry-image">
+                        <img src="maintenance/featured.webp" alt="" loading="lazy" decoding="async" width="960" height="960">
+                    </span>
+                    <div class="directory-entry-text">
+                        <p class="directory-entry-note">Industrial operations</p>
+                        <h2 id="maintenance-title">Predictive Maintenance of Mining Trains</h2>
+                        <p class="directory-entry-summary">Identifying trains at risk of bearing failure so maintenance teams can intervene before a breakdown.</p>
+                    </div>
+                    <p class="directory-entry-methods">Classification · scikit-learn · TensorFlow</p>
+                    <span class="directory-entry-arrow" aria-hidden="true">→</span>
+                </a>
+            </li>
+            <li>
+                <a class="directory-entry" href="recommendation/index.html" aria-labelledby="recommendation-title">
+                    <span class="directory-entry-image">
+                        <img src="recommendation/featured.webp" alt="" loading="lazy" decoding="async" width="1152" height="634">
+                    </span>
+                    <div class="directory-entry-text">
+                        <p class="directory-entry-note">Featured in an investor relations report</p>
+                        <h2 id="recommendation-title">Recommendation Engine for Retail Coupons</h2>
+                        <p class="directory-entry-summary">Personalizing coupon offers to increase app engagement and sales.</p>
+                    </div>
+                    <p class="directory-entry-methods">Personalized recommendations · Behavioral data</p>
+                    <span class="directory-entry-arrow" aria-hidden="true">→</span>
+                </a>
+            </li>
+            <li>
+                <a class="directory-entry" href="graph/index.html" aria-labelledby="graph-title">
+                    <span class="directory-entry-image">
+                        <img src="graph/featured.webp" alt="" loading="lazy" decoding="async" width="1152" height="648">
+                    </span>
+                    <div class="directory-entry-text">
+                        <p class="directory-entry-note">Product analytics</p>
+                        <h2 id="graph-title">Graph Analysis in App Navigation</h2>
+                        <p class="directory-entry-summary">Mapping journeys between app features to see which services people use together.</p>
+                    </div>
+                    <p class="directory-entry-methods">Directed graphs · NetworkX · Pyvis</p>
+                    <span class="directory-entry-arrow" aria-hidden="true">→</span>
+                </a>
+            </li>
+            <li>
+                <a class="directory-entry" href="persona/index.html" aria-labelledby="persona-title">
+                    <span class="directory-entry-image">
+                        <img src="persona/featured.webp" alt="" loading="lazy" decoding="async" width="1152" height="576">
+                    </span>
+                    <div class="directory-entry-text">
+                        <p class="directory-entry-note">Featured in an investor relations report</p>
+                        <h2 id="persona-title">Creating Customer Personas of Loyalty Programs</h2>
+                        <p class="directory-entry-summary">Visualizing how loyalty program members move between stores and what they buy along the way.</p>
+                    </div>
+                    <p class="directory-entry-methods">Transaction analysis · Purchase probabilities</p>
+                    <span class="directory-entry-arrow" aria-hidden="true">→</span>
+                </a>
+            </li>
+            <li>
+                <a class="directory-entry" href="reviews/index.html" aria-labelledby="reviews-title">
+                    <span class="directory-entry-image">
+                        <img src="reviews/featured.webp" alt="" loading="lazy" decoding="async" width="960" height="549">
+                    </span>
+                    <div class="directory-entry-text">
+                        <p class="directory-entry-note">Natural language processing</p>
+                        <h2 id="reviews-title">Sentiment Analysis of Online Reviews</h2>
+                        <p class="directory-entry-summary">Tracking themes and customer sentiment in Portuguese-language product reviews.</p>
+                    </div>
+                    <p class="directory-entry-methods">Selenium · NLTK · Streamlit</p>
+                    <span class="directory-entry-arrow" aria-hidden="true">→</span>
+                </a>
+            </li>
+        </ul>
     </main>
 
-
-
     <footer>
-        <div class="container">
-            <p>© 2025 Eduardo Furtado</p>
+        <div class="footer-inner wrap">
+            <p>© 2026 Eduardo Furtado</p>
+            <a href="https://www.linkedin.com/in/eduardo-furtado" target="_blank" rel="noopener">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
         </div>
     </footer>
 </body>

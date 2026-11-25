@@ -5,58 +5,60 @@
     
     <meta charset="UTF-8">
     <meta name="color-scheme" content="dark">
-    <style>html, body { background-color: #06131a; }</style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="theme-color" content="#06131a">
+    <meta name="theme-color" content="#121413">
     <title>Eduardo Furtado Portfolio - Project Geospatial</title>
-    <link rel="icon" href="../../assets/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="../../assets/images/favicon.png" type="image/png">
     <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../article.css">
 </head>
 <body class="page-project-detail">
-    <header>
-        <div class="container header-content">
-            <a href="../../index.html" class="title-link"><h1>Eduardo Furtado</h1></a>
-            <nav>
-                <ul>
-                    <li><a href="../../index.html">Bio</a></li>
-                    <li><a href="../../research.html">Research</a></li>
-                    <li><a href="../index.html">Projects</a></li>
-                </ul>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <div class="header-inner wrap">
+            <a class="brand" href="../../index.html" aria-label="Eduardo Furtado, home">
+                <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+                <span class="brand-name">Eduardo Furtado</span>
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="../../index.html">Overview</a>
+                <a href="../../research.html">Research</a>
+                <a href="../../projects/index.html" aria-current="location">Projects</a>
+                <a class="nav-contact" href="https://www.linkedin.com/in/eduardo-furtado" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
             </nav>
         </div>
     </header>
 
+    <main id="main">
+        <article class="wrap article-page" id="research">
+            <div class="article-heading">
+                <p class="article-kicker">Location analytics</p>
+                <h1>Geospatial Data Science for Customer Engagement</h1>
+            </div>
 
-
-    <main>
-        <section id="research" class="section">
-            <div class="container-experience">
-
-                <h2 class="research-title">Geospatial Data Science for Customer Engagement</h2>
-
-                <figure class="project-figure">
-                    <img src="featured.jpg" alt="Featured image" class="project-detail-image-wide">
-                    <figcaption>Image from the Investor Relations report</figcaption>
+            <div class="article-spread">
+                <figure class="article-figure">
+                    <img src="featured.webp" width="1152" height="312" alt="Three maps showing visitor locations and clusters near shopping malls">
+                    <figcaption>Image from the Investor Relations report <a href="featured.jpg">View full size</a></figcaption>
                 </figure>
 
-                <p class="research-paragraph">Using geolocation data from app users who opted in, I analyzed customer behavior during a shopping mall’s Christmas campaign. With Python, Pandas, Folium, and Mixpanel, I identified highly engaged customers, offered them free parking for three months, and mapped their travel patterns. Most customers traveled an average of 5 km to the mall, with some traveling over 40 km. These insights helped optimize marketing efforts, resulting in 60% of these customers participating in subsequent Mother’s and Valentine’s Day campaigns, spending 27% more than the average participant.</p>
-                
-                <p class="research-paragraph">Another example is the analysis of a campaign offering 14,000 appetizer coupons across 13 malls. Using Folium to create heat maps, I visualized where customers were when reserving coupons and their time to visit. The data showed that 42% visited the mall the same day, 14% the next day, and 44% within a week, with an average distance of 4.4 km. These findings informed strategies to better align future campaigns with customer behavior, increasing foot traffic and engagement.</p>
+                <div class="article-reading">
+                    <p>Using geolocation data from app users who opted in, I analyzed customer behavior during a shopping mall’s Christmas campaign. With Python, Pandas, Folium, and Mixpanel, I identified highly engaged customers, offered them free parking for three months, and mapped their travel patterns. Most customers traveled an average of 5 km to the mall, with some traveling over 40 km. These insights helped optimize marketing efforts, resulting in 60% of these customers participating in subsequent Mother’s and Valentine’s Day campaigns, spending 27% more than the average participant.</p>
 
-                <p class="research-paragraph">You can read more about this analysis in the <a href="https://ri.multiplan.com.br/en/analysis-tools/results-center/" target="_blank" class="external-link">Investor Relations</a> report this project was showcased in the Earnings Release 4Q20 (p. 15), 2Q21 (p. 20), 1Q22 (p. 12) <a href="https://api.mziq.com/mzfilemanager/v2/d/08dd2899-a019-4531-a90c-f00c9f91b0ff/4a5f4be7-6eae-00be-f2d4-ae474e778420" target="_blank" class="external-link">[direct link to the PDF]</a>.</p>
+                    <p>Another example is the analysis of a campaign offering 14,000 appetizer coupons across 13 malls. Using Folium to create heat maps, I visualized where customers were when reserving coupons and their time to visit. The data showed that 42% visited the mall the same day, 14% the next day, and 44% within a week, with an average distance of 4.4 km. These findings informed strategies to better align future campaigns with customer behavior, increasing foot traffic and engagement.</p>
 
-                <div class="button-container">
-                    <a href="../index.html" class="back-button">← Back to Projects</a>
+                    <p>You can read more about this analysis in the <a href="https://ri.multiplan.com.br/en/analysis-tools/results-center/" target="_blank" class="external-link">Investor Relations</a> report this project was showcased in the Earnings Release 4Q20 (p. 15), 2Q21 (p. 20), 1Q22 (p. 12) <a href="https://api.mziq.com/mzfilemanager/v2/d/08dd2899-a019-4531-a90c-f00c9f91b0ff/4a5f4be7-6eae-00be-f2d4-ae474e778420" target="_blank" class="external-link">[direct link to the PDF]</a>.</p>
+
+                    <a href="../index.html" class="article-return"><span aria-hidden="true">←</span> Back to projects</a>
                 </div>
             </div>
-        </section>
+        </article>
     </main>
 
-
-
     <footer>
-        <div class="container">
-            <p>© 2025 Eduardo Furtado</p>
+        <div class="footer-inner wrap">
+            <p>© 2026 Eduardo Furtado</p>
+            <a href="https://www.linkedin.com/in/eduardo-furtado" target="_blank" rel="noopener">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
         </div>
     </footer>
 </body>

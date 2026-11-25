@@ -5,56 +5,58 @@
     
     <meta charset="UTF-8">
     <meta name="color-scheme" content="dark">
-    <style>html, body { background-color: #06131a; }</style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="theme-color" content="#06131a">
+    <meta name="theme-color" content="#121413">
     <title>Eduardo Furtado Portfolio - Project Reviews</title>
-    <link rel="icon" href="../../assets/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="../../assets/images/favicon.png" type="image/png">
     <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../article.css">
 </head>
 <body class="page-project-detail">
-    <header>
-        <div class="container header-content">
-            <a href="../../index.html" class="title-link"><h1>Eduardo Furtado</h1></a>
-            <nav>
-                <ul>
-                    <li><a href="../../index.html">Bio</a></li>
-                    <li><a href="../../research.html">Research</a></li>
-                    <li><a href="../index.html">Projects</a></li>
-                </ul>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <div class="header-inner wrap">
+            <a class="brand" href="../../index.html" aria-label="Eduardo Furtado, home">
+                <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+                <span class="brand-name">Eduardo Furtado</span>
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="../../index.html">Overview</a>
+                <a href="../../research.html">Research</a>
+                <a href="../../projects/index.html" aria-current="location">Projects</a>
+                <a class="nav-contact" href="https://www.linkedin.com/in/eduardo-furtado" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
             </nav>
         </div>
     </header>
 
+    <main id="main">
+        <article class="wrap article-page" id="research">
+            <div class="article-heading">
+                <p class="article-kicker">Natural language processing</p>
+                <h1>Sentiment Analysis of Online Reviews</h1>
+            </div>
 
-
-    <main>
-        <section id="research" class="section">
-            <div class="container-experience">
-
-                <h2 class="research-title">Sentiment Analysis of Online Reviews</h2>
-
-                <figure class="project-figure">
-                    <img src="featured.png" alt="Featured image" class="project-detail-image">
+            <div class="article-spread">
+                <figure class="article-figure">
+                    <img src="featured.webp" width="960" height="549" alt="A five-star review displayed on a laptop">
                     <figcaption>Image generated with Dall-E</figcaption>
                 </figure>
 
-                <p class="research-paragraph">I worked on a project to help a client analyze customer opinions about their products by examining online reviews. Using Python, Selenium and BeautifulSoup, I scraped reviews from multiple websites to build the initial dataset. The text was cleaned and preprocessed using NLTK, and sentiment was categorized as positive, negative, or neutral using a sentiment analysis tool adapted for Portuguese.</p>
-                
-                <p class="research-paragraph">To make the insights accessible, I built an interactive dashboard with Streamlit. The dashboard displayed sentiment breakdowns, key themes, and allowed users to filter data dynamically. I automated the scraping process with a scheduled task that ran daily, updating the dataset, preprocessing pipeline, and dashboard database to ensure near real-time insights.</p>
+                <div class="article-reading">
+                    <p>I worked on a project to help a client analyze customer opinions about their products by examining online reviews. Using Python, Selenium and BeautifulSoup, I scraped reviews from multiple websites to build the initial dataset. The text was cleaned and preprocessed using NLTK, and sentiment was categorized as positive, negative, or neutral using a sentiment analysis tool adapted for Portuguese.</p>
 
-                <div class="button-container">
-                    <a href="../index.html" class="back-button">← Back to Projects</a>
+                    <p>To make the insights accessible, I built an interactive dashboard with Streamlit. The dashboard displayed sentiment breakdowns, key themes, and allowed users to filter data dynamically. I automated the scraping process with a scheduled task that ran daily, updating the dataset, preprocessing pipeline, and dashboard database to ensure near real-time insights.</p>
+
+                    <a href="../index.html" class="article-return"><span aria-hidden="true">←</span> Back to projects</a>
                 </div>
             </div>
-        </section>
+        </article>
     </main>
 
-
-
     <footer>
-        <div class="container">
-            <p>© 2025 Eduardo Furtado</p>
+        <div class="footer-inner wrap">
+            <p>© 2026 Eduardo Furtado</p>
+            <a href="https://www.linkedin.com/in/eduardo-furtado" target="_blank" rel="noopener">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
         </div>
     </footer>
 </body>

@@ -1,0 +1,208 @@
+.project-directory {
+    --entry-columns: minmax(7rem, 14%) minmax(0, 1fr) minmax(9rem, 20%) 1.5rem;
+    --entry-gap: clamp(1.25rem, 3.25vw, 3.25rem);
+    padding-block: clamp(3rem, 6.5vw, 6rem);
+}
+
+.directory-heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-bottom: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.directory-heading h1,
+.directory-entry h2 {
+    margin: 0;
+    color: var(--ink);
+    font-family: var(--sans);
+}
+
+.directory-heading h1 {
+    font-size: clamp(3.5rem, 7.5vw, 6.75rem);
+    font-weight: 650;
+    line-height: 1;
+    letter-spacing: -.065em;
+}
+
+.directory-heading p {
+    max-width: 30ch;
+    margin: 0;
+    color: var(--muted);
+    font-size: 1rem;
+    line-height: 1.55;
+}
+
+.directory-columns,
+.directory-entry {
+    display: grid;
+    grid-template-columns: var(--entry-columns);
+    column-gap: var(--entry-gap);
+}
+
+.directory-columns {
+    padding-block: .85rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font: 500 .68rem/1.4 var(--mono);
+    letter-spacing: .09em;
+    text-transform: uppercase;
+}
+
+.directory-columns span:first-child {
+    grid-column: 2;
+}
+
+.directory-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid var(--rule);
+}
+
+.directory-list li {
+    border-bottom: 1px solid var(--rule);
+}
+
+.directory-entry {
+    align-items: center;
+    padding-block: clamp(1.35rem, 2.8vw, 2.25rem);
+    color: var(--ink);
+    text-decoration: none;
+}
+
+.directory-entry-image {
+    display: block;
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+    background: var(--surface);
+}
+
+.directory-entry-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .25s ease;
+}
+
+.directory-entry-note {
+    margin: 0 0 .55rem;
+    color: var(--accent);
+    font: 500 .68rem/1.45 var(--mono);
+    letter-spacing: .06em;
+    text-transform: uppercase;
+}
+
+.directory-entry h2 {
+    font-size: clamp(1.4rem, 2.25vw, 2.2rem);
+    font-weight: 600;
+    letter-spacing: -.045em;
+    line-height: 1.12;
+    text-wrap: pretty;
+}
+
+.directory-entry-summary {
+    margin: .6rem 0 0;
+    color: var(--muted);
+    font-size: .96rem;
+    line-height: 1.55;
+}
+
+.directory-entry-methods {
+    margin: 0;
+    color: var(--muted);
+    font: 400 .8rem/1.8 var(--mono);
+}
+
+.directory-entry-arrow {
+    color: var(--accent);
+    font-family: var(--mono);
+    font-size: 1.45rem;
+    transition: transform .2s ease;
+}
+
+.directory-entry:is(:hover, :focus-visible) h2 {
+    color: var(--accent);
+}
+
+.directory-entry:is(:hover, :focus-visible) img {
+    transform: scale(1.035);
+}
+
+.directory-entry:is(:hover, :focus-visible) .directory-entry-arrow {
+    transform: translateX(.2rem);
+}
+
+@media (max-width: 800px) {
+    .project-directory {
+        --entry-columns: minmax(5.5rem, 22%) minmax(0, 1fr) 1.25rem;
+    }
+
+    .directory-columns {
+        display: none;
+    }
+
+    .directory-entry-image,
+    .directory-entry-arrow {
+        grid-row: 1 / 3;
+    }
+
+    .directory-entry-image {
+        align-self: start;
+    }
+
+    .directory-entry-methods {
+        grid-column: 2;
+        grid-row: 2;
+        margin-top: .7rem;
+        font-size: .72rem;
+    }
+
+    .directory-entry-arrow {
+        grid-column: 3;
+    }
+}
+
+@media (max-width: 540px) {
+    .directory-heading {
+        display: block;
+    }
+
+    .directory-heading p {
+        margin-top: .8rem;
+    }
+
+    .directory-entry {
+        grid-template-columns: 4.75rem minmax(0, 1fr);
+        gap: 0 .9rem;
+    }
+
+    .directory-entry-image {
+        aspect-ratio: 1;
+    }
+
+    .directory-entry h2 {
+        font-size: 1.35rem;
+    }
+
+    .directory-entry-summary {
+        font-size: .9rem;
+    }
+
+    .directory-entry-arrow {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .directory-entry-image img,
+    .directory-entry-arrow {
+        transition: none;
+    }
+
+    .directory-entry:is(:hover, :focus-visible) :is(img, .directory-entry-arrow) {
+        transform: none;
+    }
+}

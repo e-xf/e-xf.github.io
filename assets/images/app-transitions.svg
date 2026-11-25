@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320" role="img" aria-labelledby="title desc">
+  <title id="title">Transitions between app features</title>
+  <desc id="desc">Selected paths from Eduardo Furtado’s app navigation study. Arrows follow users from one feature to the next. A lime arrow highlights the transition from App 14 to App 1.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 8" refX="9" refY="4" markerWidth="8" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0 10 4 0 8 2 4Z" fill="#858881"/>
+    </marker>
+    <marker id="strong-arrow" viewBox="0 0 12 10" refX="11" refY="5" markerWidth="11" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0 12 5 0 10 2 5Z" fill="#a3a69d"/>
+    </marker>
+    <marker id="selected-arrow" viewBox="0 0 16 14" refX="15" refY="7" markerWidth="17" markerHeight="15" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0 16 7 0 14 3 7Z" fill="#c4f076"/>
+    </marker>
+  </defs>
+
+  <!-- Connections around the periphery. -->
+  <g fill="none" stroke="#858881" stroke-width="1.2" opacity=".68" marker-end="url(#arrow)">
+    <path d="M39 123C44 179 90 249 160 275"/>
+    <path d="M349 47C243 65 111 140 91 197"/>
+    <path d="M431 251C479 226 488 157 464 116"/>
+  </g>
+  <g fill="none" stroke="#858881" stroke-width="1.2" marker-end="url(#arrow)">
+    <path d="M180 38Q79 43 42 111"/>
+    <path d="M192 35Q278 -5 348 42"/>
+    <path d="M193 37C315 31 402 43 456 102"/>
+    <path d="M139 87Q120 32 178 35"/>
+    <path d="M185 42Q185 79 150 91"/>
+  </g>
+
+  <!-- Inbound paths to App 1 and the second prominent path out of App 14. -->
+  <g fill="none" stroke="#a3a69d" marker-end="url(#strong-arrow)">
+    <path d="M147 98Q152 136 219 146" stroke-width="2.1"/>
+    <path d="M185 43Q165 96 227 134" stroke-width="2.6"/>
+    <path d="M353 50Q300 55 257 131" stroke-width="1.8"/>
+    <path d="M455 111Q358 96 264 141" stroke-width="2.3"/>
+    <path d="M44 119Q129 153 218 151" stroke-width="3.6"/>
+    <path d="M94 201Q128 130 218 156" stroke-width="3.8"/>
+    <path d="M168 271Q171 212 227 168" stroke-width="2"/>
+    <path d="M419 257Q299 303 173 279" stroke-width="3.7"/>
+  </g>
+
+  <path d="M419 251Q328 227 262 168" fill="none" stroke="#c4f076" stroke-width="4.7" marker-end="url(#selected-arrow)"/>
+
+  <g fill="#d1d3ca">
+    <circle cx="38" cy="117" r="5"/>
+    <circle cx="142" cy="93" r="5"/>
+    <circle cx="186" cy="36" r="5"/>
+    <circle cx="356" cy="45" r="5"/>
+    <circle cx="461" cy="109" r="5"/>
+    <circle cx="87" cy="207" r="8"/>
+    <circle cx="166" cy="278" r="5"/>
+    <circle cx="426" cy="254" r="6"/>
+    <circle cx="242" cy="151" r="21" fill="#eceee3"/>
+  </g>
+  <g fill="#d1d3ca" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16">
+    <text x="55" y="153">App 12</text>
+    <text x="122" y="115" text-anchor="end">App 3</text>
+    <text x="183" y="19" text-anchor="middle">App 8</text>
+    <text x="368" y="39">App 10</text>
+    <text x="428" y="135" text-anchor="middle">App 15</text>
+    <text x="69" y="235" text-anchor="middle">App 11</text>
+    <text x="166" y="305" text-anchor="middle">App 4</text>
+    <text x="426" y="282" text-anchor="middle">App 14</text>
+    <text x="242" y="156" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#252722">App 1</text>
+  </g>
+</svg>

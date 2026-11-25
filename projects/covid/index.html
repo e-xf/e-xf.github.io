@@ -5,56 +5,58 @@
     
     <meta charset="UTF-8">
     <meta name="color-scheme" content="dark">
-    <style>html, body { background-color: #06131a; }</style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="theme-color" content="#06131a">
+    <meta name="theme-color" content="#121413">
     <title>Eduardo Furtado Portfolio - Project COVID</title>
-    <link rel="icon" href="../../assets/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="../../assets/images/favicon.png" type="image/png">
     <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../article.css">
 </head>
 <body class="page-project-detail">
-    <header>
-        <div class="container header-content">
-            <a href="../../index.html" class="title-link"><h1>Eduardo Furtado</h1></a>
-            <nav>
-                <ul>
-                    <li><a href="../../index.html">Bio</a></li>
-                    <li><a href="../../research.html">Research</a></li>
-                    <li><a href="../index.html">Projects</a></li>
-                </ul>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <div class="header-inner wrap">
+            <a class="brand" href="../../index.html" aria-label="Eduardo Furtado, home">
+                <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+                <span class="brand-name">Eduardo Furtado</span>
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="../../index.html">Overview</a>
+                <a href="../../research.html">Research</a>
+                <a href="../../projects/index.html" aria-current="location">Projects</a>
+                <a class="nav-contact" href="https://www.linkedin.com/in/eduardo-furtado" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
             </nav>
         </div>
     </header>
 
+    <main id="main">
+        <article class="wrap article-page" id="research">
+            <div class="article-heading">
+                <p class="article-kicker">Occupational health</p>
+                <h1>COVID-19 Data Platform in Metallurgical Plants</h1>
+            </div>
 
-
-    <main>
-        <section id="research" class="section">
-            <div class="container-experience">
-
-                <h2 class="research-title">COVID-19 Data Platform in Metallurgical Plants</h2>
-
-                <figure class="project-figure">
-                    <img src="featured.png" alt="Featured image" class="project-detail-image">
+            <div class="article-spread">
+                <figure class="article-figure">
+                    <img src="featured.webp" width="960" height="960" alt="A masked worker in protective equipment inside a metallurgical plant">
                     <figcaption>Image generated with FLUX.1 [schnell]</figcaption>
                 </figure>
 
-                <p class="research-paragraph">At the beginning of COVID-19 pandemic, the occupational medicine team at a large metallurgical company needed a scalable system to replace the Excel spreadsheet they started for tracking. Collaborating with the chief doctor, I defined the data requirements and built a Python CRUD web platform using Flask, where doctors could input and update data into a database. I also created a pipeline to collect and clean data from states health agencies using public APIs.</p>
-                
-                <p class="research-paragraph">To further support the doctors, I developed a Tableau dashboard integrating both private and public data, offering insights into COVID-19 rates, testing efforts, and trends across factories. This tool allowed the team to compare company data with city-level statistics, allocate resources like testing kits and safety equipment, and manage factory operations more effectively. The dashboard quickly became essential for their daily operations, earning high praise from the medical team.</p>
+                <div class="article-reading">
+                    <p>At the beginning of COVID-19 pandemic, the occupational medicine team at a large metallurgical company needed a scalable system to replace the Excel spreadsheet they started for tracking. Collaborating with the chief doctor, I defined the data requirements and built a Python CRUD web platform using Flask, where doctors could input and update data into a database. I also created a pipeline to collect and clean data from states health agencies using public APIs.</p>
 
-                <div class="button-container">
-                    <a href="../index.html" class="back-button">← Back to Projects</a>
+                    <p>To further support the doctors, I developed a Tableau dashboard integrating both private and public data, offering insights into COVID-19 rates, testing efforts, and trends across factories. This tool allowed the team to compare company data with city-level statistics, allocate resources like testing kits and safety equipment, and manage factory operations more effectively. The dashboard quickly became essential for their daily operations, earning high praise from the medical team.</p>
+
+                    <a href="../index.html" class="article-return"><span aria-hidden="true">←</span> Back to projects</a>
                 </div>
             </div>
-        </section>
+        </article>
     </main>
 
-
-
     <footer>
-        <div class="container">
-            <p>© 2025 Eduardo Furtado</p>
+        <div class="footer-inner wrap">
+            <p>© 2026 Eduardo Furtado</p>
+            <a href="https://www.linkedin.com/in/eduardo-furtado" target="_blank" rel="noopener">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
         </div>
     </footer>
 </body>

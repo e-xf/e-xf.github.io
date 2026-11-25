@@ -5,58 +5,60 @@
     
     <meta charset="UTF-8">
     <meta name="color-scheme" content="dark">
-    <style>html, body { background-color: #06131a; }</style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="theme-color" content="#06131a">
+    <meta name="theme-color" content="#121413">
     <title>Eduardo Furtado Portfolio - Project Maintenance</title>
-    <link rel="icon" href="../../assets/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="../../assets/images/favicon.png" type="image/png">
     <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../article.css">
 </head>
 <body class="page-project-detail">
-    <header>
-        <div class="container header-content">
-            <a href="../../index.html" class="title-link"><h1>Eduardo Furtado</h1></a>
-            <nav>
-                <ul>
-                    <li><a href="../../index.html">Bio</a></li>
-                    <li><a href="../../research.html">Research</a></li>
-                    <li><a href="../index.html">Projects</a></li>
-                </ul>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <div class="header-inner wrap">
+            <a class="brand" href="../../index.html" aria-label="Eduardo Furtado, home">
+                <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+                <span class="brand-name">Eduardo Furtado</span>
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="../../index.html">Overview</a>
+                <a href="../../research.html">Research</a>
+                <a href="../../projects/index.html" aria-current="location">Projects</a>
+                <a class="nav-contact" href="https://www.linkedin.com/in/eduardo-furtado" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
             </nav>
         </div>
     </header>
 
+    <main id="main">
+        <article class="wrap article-page" id="research">
+            <div class="article-heading">
+                <p class="article-kicker">Rail operations</p>
+                <h1>Predictive Maintenance of Mining Trains</h1>
+            </div>
 
-
-    <main>
-        <section id="research" class="section">
-            <div class="container-experience">
-
-                <h2 class="research-title">Predictive Maintenance of Mining Trains</h2>
-
-                <figure class="project-figure">
-                    <img src="featured.png" alt="Featured image" class="project-detail-image">
+            <div class="article-spread">
+                <figure class="article-figure">
+                    <img src="featured.webp" width="960" height="960" alt="A freight train traveling through a mine">
                     <figcaption>Image generated with FLUX.1 [schnell]</figcaption>
                 </figure>
 
-                <p class="research-paragraph">I developed a predictive maintenance model to reduce train breakdowns for a mining company’s railway system connecting their mine to the port. Overheating wheel bearings were the primary cause of costly on-track failures, with repairs requiring trains to be transported to a garage with limited capacity, causing further delays.</p>
-                
-                <p class="research-paragraph">Using Python, Scikit-learn, and TensorFlow, I benchmarked machine learning models to classify overheating bearings and prioritize trains with a high failure risk for maintenance. The model was optimized for precision to avoid unnecessary jobs that could overwhelm the garage.</p>
+                <div class="article-reading">
+                    <p>I developed a predictive maintenance model to reduce train breakdowns for a mining company’s railway system connecting their mine to the port. Overheating wheel bearings were the primary cause of costly on-track failures, with repairs requiring trains to be transported to a garage with limited capacity, causing further delays.</p>
 
-                <p class="research-paragraph">The model was deployed on the company’s servers with a dashboard to display the predictions, enabling maintenance staff to plan and schedule activities more effectively. This solution significantly reduced train delays, decreased unexpected breakdowns, and improved overall operational reliability.</p>
+                    <p>Using Python, Scikit-learn, and TensorFlow, I benchmarked machine learning models to classify overheating bearings and prioritize trains with a high failure risk for maintenance. The model was optimized for precision to avoid unnecessary jobs that could overwhelm the garage.</p>
 
-                <div class="button-container">
-                    <a href="../index.html" class="back-button">← Back to Projects</a>
+                    <p>The model was deployed on the company’s servers with a dashboard to display the predictions, enabling maintenance staff to plan and schedule activities more effectively. This solution significantly reduced train delays, decreased unexpected breakdowns, and improved overall operational reliability.</p>
+
+                    <a href="../index.html" class="article-return"><span aria-hidden="true">←</span> Back to projects</a>
                 </div>
             </div>
-        </section>
+        </article>
     </main>
 
-
-
     <footer>
-        <div class="container">
-            <p>© 2025 Eduardo Furtado</p>
+        <div class="footer-inner wrap">
+            <p>© 2026 Eduardo Furtado</p>
+            <a href="https://www.linkedin.com/in/eduardo-furtado" target="_blank" rel="noopener">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
         </div>
     </footer>
 </body>

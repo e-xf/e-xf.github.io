@@ -5,60 +5,62 @@
     
     <meta charset="UTF-8">
     <meta name="color-scheme" content="dark">
-    <style>html, body { background-color: #06131a; }</style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="theme-color" content="#06131a">
+    <meta name="theme-color" content="#121413">
     <title>Eduardo Furtado Portfolio - Project Apriori</title>
-    <link rel="icon" href="../../assets/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="../../assets/images/favicon.png" type="image/png">
     <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../article.css">
 </head>
 <body class="page-project-detail">
-    <header>
-        <div class="container header-content">
-            <a href="../../index.html" class="title-link"><h1>Eduardo Furtado</h1></a>
-            <nav>
-                <ul>
-                    <li><a href="../../index.html">Bio</a></li>
-                    <li><a href="../../research.html">Research</a></li>
-                    <li><a href="../index.html">Projects</a></li>
-                </ul>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <div class="header-inner wrap">
+            <a class="brand" href="../../index.html" aria-label="Eduardo Furtado, home">
+                <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+                <span class="brand-name">Eduardo Furtado</span>
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="../../index.html">Overview</a>
+                <a href="../../research.html">Research</a>
+                <a href="../../projects/index.html" aria-current="location">Projects</a>
+                <a class="nav-contact" href="https://www.linkedin.com/in/eduardo-furtado" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
             </nav>
         </div>
     </header>
 
+    <main id="main">
+        <article class="wrap article-page" id="research">
+            <div class="article-heading">
+                <p class="article-kicker">Retail analytics</p>
+                <h1>Customer Shopping Behavior with Apriori Analysis</h1>
+            </div>
 
-
-    <main>
-        <section id="research" class="section">
-            <div class="container-experience">
-
-                <h2 class="research-title">Customer Shopping Behavior with Apriori Analysis</h2>
-
-                <figure class="project-figure">
-                    <img src="featured.jpg" alt="Featured image" class="project-detail-image-wide">
-                    <figcaption>Image from the Investor Relations report</figcaption>
+            <div class="article-spread">
+                <figure class="article-figure">
+                    <img src="featured.webp" width="1152" height="928" alt="Chord diagram connecting stores frequently visited on the same shopping trip">
+                    <figcaption>Image from the Investor Relations report <a href="featured.jpg">View full size</a></figcaption>
                 </figure>
 
-                <p class="research-paragraph">Shopping malls often run promotional campaigns during special holidays, like Christmas or Mother's Day, offering customers the chance to win prizes or enter raffles in exchange for submitting their purchase invoices. These campaigns provide a valuable source of transactional data, as this information is typically only accessible by the stores. By collecting these invoices, we can generate unique insights about customer spending patterns and movement across multiple retailers.</p> 
-                    
-                <p class="research-paragraph">Using Python and the mlxtend library, I applied Market Basket Analysis techniques with the Apriori algorithm to identify frequent store pairs that customers visited during the same trip. Metrics like support and confidence highlighted the most common and impactful store combinations.</p>
-                
-                <p class="research-paragraph">To present the findings, I created a Chord diagram with Python that visualized store relationships and their influence on total visits and upselling opportunities. These insights helped the operations and marketing teams optimize the store mix and design strategies to increase sales performance in the malls. In 2021, tenants' sales had a 42% YoY increase, followed by another strong growth of 37% in 2022, reaching R$20 billion. By 2023, sales reached an all-time high of R$21.9 billion, a 9.5% YoY increase, and a 34.5% rise compared to the pre-pandemic level of 2019 (R$16.3 billion).</p>
+                <div class="article-reading">
+                    <p>Shopping malls often run promotional campaigns during special holidays, like Christmas or Mother's Day, offering customers the chance to win prizes or enter raffles in exchange for submitting their purchase invoices. These campaigns provide a valuable source of transactional data, as this information is typically only accessible by the stores. By collecting these invoices, we can generate unique insights about customer spending patterns and movement across multiple retailers.</p>
 
-                <p class="research-paragraph">You can read more about this analysis in the <a href="https://ri.multiplan.com.br/en/analysis-tools/results-center/" target="_blank" class="external-link">Investor Relations</a> report this project was showcased in the Earnings Release 4Q20 (p. 14), 4Q23 (p. 23) <a href="https://api.mziq.com/mzfilemanager/v2/d/08dd2899-a019-4531-a90c-f00c9f91b0ff/4ff6e578-e627-48ba-f400-93f9a4201f26" target="_blank" class="external-link">[direct link to the PDF]</a>.</p>
+                    <p>Using Python and the mlxtend library, I applied Market Basket Analysis techniques with the Apriori algorithm to identify frequent store pairs that customers visited during the same trip. Metrics like support and confidence highlighted the most common and impactful store combinations.</p>
 
-                <div class="button-container">
-                    <a href="../index.html" class="back-button">← Back to Projects</a>
+                    <p>To present the findings, I created a Chord diagram with Python that visualized store relationships and their influence on total visits and upselling opportunities. These insights helped the operations and marketing teams optimize the store mix and design strategies to increase sales performance in the malls. In 2021, tenants' sales had a 42% YoY increase, followed by another strong growth of 37% in 2022, reaching R$20 billion. By 2023, sales reached an all-time high of R$21.9 billion, a 9.5% YoY increase, and a 34.5% rise compared to the pre-pandemic level of 2019 (R$16.3 billion).</p>
+
+                    <p>You can read more about this analysis in the <a href="https://ri.multiplan.com.br/en/analysis-tools/results-center/" target="_blank" class="external-link">Investor Relations</a> report this project was showcased in the Earnings Release 4Q20 (p. 14), 4Q23 (p. 23) <a href="https://api.mziq.com/mzfilemanager/v2/d/08dd2899-a019-4531-a90c-f00c9f91b0ff/4ff6e578-e627-48ba-f400-93f9a4201f26" target="_blank" class="external-link">[direct link to the PDF]</a>.</p>
+
+                    <a href="../index.html" class="article-return"><span aria-hidden="true">←</span> Back to projects</a>
                 </div>
             </div>
-        </section>
+        </article>
     </main>
 
-
-
     <footer>
-        <div class="container">
-            <p>© 2025 Eduardo Furtado</p>
+        <div class="footer-inner wrap">
+            <p>© 2026 Eduardo Furtado</p>
+            <a href="https://www.linkedin.com/in/eduardo-furtado" target="_blank" rel="noopener">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
         </div>
     </footer>
 </body>
