@@ -8,22 +8,6 @@
 
 :root {
     color-scheme: dark;
-    --bg: #121413;
-    --surface: #1b1e1b;
-    --ink: #f1f2ef;
-    --muted: #b1b6ae;
-    --accent: #c4f076;
-    --rule: #373c35;
-    --sans: "DM Sans", "Helvetica Neue", Arial, sans-serif;
-    --mono: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-    --gutter: clamp(1.2rem, 5.5vw, 5.25rem);
-    font-family: var(--sans);
-    color: var(--ink);
-    background: var(--bg);
-    -webkit-text-size-adjust: 100%;
-}
-
-:root.personal-letter {
     --bg: #24231f;
     --surface: #2e2d28;
     --ink: #f2ede4;
@@ -31,6 +15,13 @@
     --accent: #dcbf8e;
     --rule: #4c4941;
     --serif: Georgia, "Times New Roman", serif;
+    --sans: "DM Sans", "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    --gutter: clamp(1.2rem, 5.5vw, 5.25rem);
+    font-family: var(--sans);
+    color: var(--ink);
+    background: var(--bg);
+    -webkit-text-size-adjust: 100%;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -126,7 +117,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
     letter-spacing: .09em;
 }
 .eyebrow { margin-bottom: 10px; color: var(--accent); font: 500 .875rem/1.4 system-ui, sans-serif; }
-.hero h1 {
+main h1 {
     font: 400 clamp(39px, 6.8vw, 70px)/.97 var(--serif);
     letter-spacing: -.06em;
 }
@@ -232,7 +223,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
         grid-template-areas: "heading portrait" "intro portrait" "actions portrait";
         column-gap: clamp(3rem, 7vw, 7rem);
     }
-    .hero h1 { font-size: clamp(3.75rem, 6vw, 5.4rem); }
+    main h1 { font-size: clamp(3.75rem, 6vw, 5.4rem); }
     .hero-portrait { width: clamp(10rem, 15vw, 12.5rem); }
     .intro { max-width: 60ch; text-wrap: pretty; }
 }

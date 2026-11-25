@@ -1,37 +1,17 @@
 .project-directory {
-    --entry-columns: minmax(7rem, 14%) minmax(0, 1fr) minmax(9rem, 20%) 1.5rem;
-    --entry-gap: clamp(1.25rem, 3.25vw, 3.25rem);
-    padding-block: clamp(3rem, 6.5vw, 6rem);
+    --entry-columns: minmax(6rem, 13.5%) minmax(0, 1fr) minmax(8rem, 16%) 1.25rem;
+    --entry-gap: clamp(1rem, 2.3vw, 2.4rem);
+    padding-block: clamp(2.75rem, 6vw, 5.75rem);
 }
 
 .directory-heading {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 2rem;
-    padding-bottom: clamp(2.5rem, 5vw, 4.5rem);
-}
-
-.directory-heading h1,
-.directory-entry h2 {
-    margin: 0;
-    color: var(--ink);
-    font-family: var(--sans);
-}
-
-.directory-heading h1 {
-    font-size: clamp(3.5rem, 7.5vw, 6.75rem);
-    font-weight: 650;
-    line-height: 1;
-    letter-spacing: -.065em;
+    padding-bottom: clamp(2.75rem, 6vw, 5.75rem);
 }
 
 .directory-heading p {
-    max-width: 30ch;
-    margin: 0;
-    color: var(--muted);
-    font-size: 1rem;
-    line-height: 1.55;
+    margin: 25px 0 0;
+    font: 400 clamp(19px, 2.8vw, 24px)/1.45 var(--serif);
+    letter-spacing: -.02em;
 }
 
 .directory-columns,
@@ -67,7 +47,7 @@
 
 .directory-entry {
     align-items: center;
-    padding-block: clamp(1.35rem, 2.8vw, 2.25rem);
+    padding-block: 1.2rem;
     color: var(--ink);
     text-decoration: none;
 }
@@ -75,7 +55,7 @@
 .directory-entry-image {
     display: block;
     overflow: hidden;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 1.58;
     background: var(--surface);
 }
 
@@ -84,60 +64,67 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform .25s ease;
+}
+
+.directory-entry-image img[src^="apriori/"] {
+    object-fit: contain;
+    background: #fff;
+}
+
+.directory-entry-image img[src^="geospatial/"] {
+    object-position: 6% center;
 }
 
 .directory-entry-note {
-    margin: 0 0 .55rem;
+    margin: 0 0 .35rem;
     color: var(--accent);
-    font: 500 .68rem/1.45 var(--mono);
-    letter-spacing: .06em;
+    font: 500 .65rem/1.5 var(--mono);
+    letter-spacing: .09em;
     text-transform: uppercase;
 }
 
 .directory-entry h2 {
-    font-size: clamp(1.4rem, 2.25vw, 2.2rem);
-    font-weight: 600;
-    letter-spacing: -.045em;
-    line-height: 1.12;
+    font: 550 clamp(1.25rem, 2vw, 1.9rem)/1.18 var(--sans);
+    letter-spacing: -.04em;
     text-wrap: pretty;
 }
 
 .directory-entry-summary {
-    margin: .6rem 0 0;
+    margin: .4rem 0 0;
+    max-width: 54ch;
     color: var(--muted);
-    font-size: .96rem;
-    line-height: 1.55;
+    font-size: .92rem;
+    line-height: 1.5;
 }
 
 .directory-entry-methods {
     margin: 0;
     color: var(--muted);
-    font: 400 .8rem/1.8 var(--mono);
+    font: 400 .75rem/1.7 var(--mono);
 }
 
 .directory-entry-arrow {
     color: var(--accent);
-    font-family: var(--mono);
-    font-size: 1.45rem;
-    transition: transform .2s ease;
+    font-size: 1.25rem;
 }
 
 .directory-entry:is(:hover, :focus-visible) h2 {
     color: var(--accent);
 }
 
-.directory-entry:is(:hover, :focus-visible) img {
-    transform: scale(1.035);
+@media (prefers-reduced-motion: no-preference) {
+    .directory-entry-arrow {
+        transition: transform .18s ease;
+    }
+
+    .directory-entry:is(:hover, :focus-visible) .directory-entry-arrow {
+        transform: translateX(2px);
+    }
 }
 
-.directory-entry:is(:hover, :focus-visible) .directory-entry-arrow {
-    transform: translateX(.2rem);
-}
-
-@media (max-width: 800px) {
+@media (max-width: 55rem) {
     .project-directory {
-        --entry-columns: minmax(5.5rem, 22%) minmax(0, 1fr) 1.25rem;
+        --entry-columns: minmax(5.25rem, 17%) minmax(0, 1fr) auto;
     }
 
     .directory-columns {
@@ -165,44 +152,26 @@
     }
 }
 
-@media (max-width: 540px) {
-    .directory-heading {
-        display: block;
-    }
-
-    .directory-heading p {
-        margin-top: .8rem;
-    }
-
+@media (max-width: 44rem) {
     .directory-entry {
-        grid-template-columns: 4.75rem minmax(0, 1fr);
+        grid-template-columns: 4.85rem minmax(0, 1fr);
         gap: 0 .9rem;
+        align-items: start;
     }
 
     .directory-entry-image {
         aspect-ratio: 1;
     }
 
-    .directory-entry h2 {
-        font-size: 1.35rem;
+    .directory-entry-note {
+        font-size: .61rem;
     }
 
     .directory-entry-summary {
-        font-size: .9rem;
+        font-size: .87rem;
     }
 
     .directory-entry-arrow {
         display: none;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .directory-entry-image img,
-    .directory-entry-arrow {
-        transition: none;
-    }
-
-    .directory-entry:is(:hover, :focus-visible) :is(img, .directory-entry-arrow) {
-        transform: none;
     }
 }
